@@ -5,6 +5,19 @@ body {
   background: #fff;
 }
  /* Navigation bar */
+.logo{
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+.header-title{
+    
+}
+.nav{
+    background-color: black;
+    text-align: center;
+}
 
 .nav ul {
   list-style: none;
@@ -18,7 +31,7 @@ body {
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
-  border-bottom: 1px solid #888;
+  border-bottom: 1px solid #005f5f;
   
 }
  
@@ -28,18 +41,115 @@ body {
   display: block;
   transition: .3s background-color;
 }
- 
-.nav a:hover {
-  background-color: #000;
-  color: #666;
 
-}
- 
 .nav a.active {
   text-shadow: 0 0 7px #005f5f;    
   cursor: default;
 }
+
+.nav a:hover {
+  background-color: #000;
+  text-shadow: 2px 2px 4px #007f7f, -2px -2px 4px #007f7f, 0 0 4px #007f7f;
+
+}
  
+/*  
+Banner image
+*/
+#banner {
+    background-image: url(../pics/banner2.jpg);
+    height: 200px;
+    width: 100%;
+    background-size:cover;
+
+}
+
+/*
+Main section
+*/
+
+#brian{
+    width: 87px;
+    height: 298px;
+    margin: 0 1em 0 1em;
+    padding: 0 ;
+    float: left
+}
+
+.brian-text p{;
+    font-size: 15px;
+    float: left;
+    width: 25px;
+    text-align: center;
+    margin: 2 0 3 0;
+    
+}
+
+.brian-name{
+    font-size: 17px;
+    width: 25px
+
+    
+}
+
+.brian-social{
+    height: 10em;
+    width: 10em;
+    border-right: .08em;
+    border-right-style: solid;
+}
+#brian-facebook{
+    height: 15px
+}
+
+#brian-instagram{
+    height: 15px;
+}
+
+#brian-twitter{
+    height: 15px;
+}
+
+.brian-social li{
+    width: 25px;
+    height: 40px;
+    margin: 10px;
+    padding-right: 0;
+    float:left;
+    text-align: center;
+}
+#mission_statement{
+    float: right;
+    text-align: center;
+    width: 8em;
+    
+   
+}
+/*
+Hours
+*/
+#hours{
+    text-align:center;
+    width: 25em;
+    clear: left
+}
+
+ul:before{
+    content:attr(aria-label);
+    font-size:120%;
+    font-weight:bold;
+    margin-left:-15px;
+}
+
+.hours_info{
+    list-style: none;
+    
+}
+
+/*
+Mobile site
+*/
+
 @media screen and (min-width: 600px) {
   .nav li {
     width: 120px;
@@ -47,34 +157,19 @@ body {
     height: 50px;
     line-height: 50px;
     font-size: 1.4em;
+    text-shadow: 2px 2px 3px #007f7f;
+
   }
    .nav li {
     display: inline-block;
     margin-right: -4px;
   }
+    #banner{
+        background-image: url(../pics/banner.jpg);
+        height: 190px;
+        width: 100%;
+        background-size: cover;
+        
+    }
  
-}
-
-/*  
-Banner image
-*/
-.banner {
-}
-
-.main_section{
-
-}
-#brian{
-  margin: 0;
-  padding: 0;    
-  width: 87px;
-  height: 298px;
-}
-
-.brian-social{
-    width: 10px;
-    height: 10px;
-    margin: 0;
-    padding: 0;
-    
 }
