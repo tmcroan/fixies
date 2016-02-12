@@ -9,11 +9,13 @@ body {
 .header-title{
     display: inline-block;
     color: white;
-    margin: 0 9;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
 }
-
+#logo-header{
+    height: 76px;
+    
+}
 
 .logo{
     width: 80px;
@@ -76,16 +78,17 @@ Banner image
 }
 
 /*
+SERVICES.html:
 Main section
 */
 
-#main_section{
+#home-section{
     display: inline-block;
     margin-top: 12px;
     border-right: .08em;
     border-right-style: solid;
     height: 298px;
-    width: 190
+    width: 190px;
 }
 
 #brian{
@@ -113,6 +116,7 @@ Main section
     height: 180px;
     width:25px;
     margin-left: 80px;
+    list-style: none;
 }
 #brian-facebook{
     height: 18px;
@@ -145,7 +149,9 @@ Main section
     margin-right: -20px;  
     font-family: 'Montserrat', sans-serif;   
 }
+
 /*
+SERVICES:
 Hours
 */
 #hours{
@@ -168,16 +174,40 @@ ul:before{
     margin-left: -80px;
 }
 
+/*STORY.html*/
+
+.main-story-section{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#storefront{
+    height: 198px;
+
+}
+
+#fixielove{
+    height: 198px
+}
+
+/*
+Footer
+*/
 #legal{
     font-size: 12px;
     text-align:center;
 }
 
+
 /*
-Mobile site
+Desktop Responsive
 */
 
 @media screen and (min-width: 600px) {
+    
+    #logo-header{
+    height: 98px;   
+    }
     .nav ul{
         margin-top: 0;
         
