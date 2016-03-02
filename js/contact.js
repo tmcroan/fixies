@@ -1,3 +1,4 @@
+ // validate email before allowing submit
 function validateEmail(email) { 
 		var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		return reg.test(email);
@@ -14,16 +15,19 @@ function validateEmail(email) {
 			var msglen    = msgval.length;
 			var mailvalid = validateEmail(emailval);
 			
+            //errortag if they have invalid email credentials
 			if(mailvalid == false) {
 				$("#email").addClass("error");
 			}
+            // if not validate
 			else if(mailvalid == true){
 				$("#email").removeClass("error");
 			}
-			
+            // errortag if msg shorter than 4 chars
 			if(msglen < 4) {
 				$("#msg").addClass("error");
 			}
+            // if not validate
 			else if(msglen >= 4){
 				$("#msg").removeClass("error");
 			}
@@ -40,7 +44,7 @@ function validateEmail(email) {
 					success: function(data) {
 						if(data == "true") {
 							$("#contact").fadeOut("fast", function(){
-								$(this).before("<p><strong>Success! Your feedback has been sent, thanks :)</strong></p>");
+								$(this).before("<p><strong>Success! Your feedback has been sent, thanks  -Fixies :)</strong></p>");
 								setTimeout("$.fancybox.close()", 1000);
 							});
 						}

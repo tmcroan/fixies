@@ -1,4 +1,64 @@
-.modalbox{
+#wrapper {
+    font-family: 'Economica', sans-serif;
+    font-size:1.em
+}
+
+#wrapper p{
+    text-align: center;
+    font-size: 2.2em;
+    color: darkcyan;
+    font-weight: 900;
+    padding: 15px;
+    font-family: 'Montserrat','sans-serif'
+}
+
+#phonebooth{
+    border-radius: 50px;
+    float: right;
+    width: 40%;
+    padding-right: 5px;
+}
+
+#skyview{
+    width: 0%;
+    padding-right:30px;
+    float: right;
+}
+
+#contact-options{
+    list-style: none;
+    font-size: 1.3em;
+    float: left;
+    width:37%;
+    margin-left: 10%;
+}
+
+#contact-options img{
+    height: 35px;
+    margin-left: -50px;
+    float: left;
+
+}
+
+#contact-options a:hover{
+text-shadow: black 0 0 15px;
+}
+
+.contact-buttons{    
+    margin: 0 0 35px ;
+}
+
+.contact-buttons a{
+    color: #005f5f;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#map {
+    width: 500px;
+    height: 400px;
+    background-color: #CCC;
+    display: none;
 }
 
 .fancybox-wrap {
@@ -35,7 +95,7 @@ color: #676767;
 width: 298px; 
 font-family: Arial, Tahoma, sans-serif; 
 margin-bottom: 10px; 
-border: 1px dotted ##005f5f; 
+border: 1px dotted #005f5f; 
 padding: 5px 9px;
 font-size: 1em;
 line-height: 1.2em;
@@ -100,3 +160,22 @@ width: 298px;
 font-size: 1.2em;
 line-height: 1.4em;
 }
+
+#phonebooth{
+        display: none;
+        
+    }
+
+#skyview{
+    margin-top: 10px;
+    width: 40%;
+    max-width: 420px;
+
+    }
+
+#contact-options{
+    width: 38%;
+    font-size: 1.8em;
+    margin: ;
+
+    }    
