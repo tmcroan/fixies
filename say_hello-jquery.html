@@ -1,0 +1,75 @@
+<!DocType HTML>
+<html>
+  <head>
+      <meta charset="utf=8">
+      <link href='https://fonts.googleapis.com/css    family=Montserrat:700|Economica' rel='stylesheet' type='text/css'>
+      <title>Fixies</title>
+      <link rel="stylesheet" type="text/css" media="all" href="css/contact.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.0.6"></script>
+  </head>
+  <body>
+    <header class="nav">
+        <div id="logo-header">
+            <p class="header-title">FIXIES</p>
+            <img src="pics/fixielogo.png" class="logo" alt="Fixie logo">
+            <p class="header-title">BIKES</p>
+        </div>
+        <div> 
+        <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li><a class="active" href="say_hello.html">Say Hello</a></li>
+        </ul>
+        </div> 
+      </header>
+      <div id="banner">
+      </div>  
+    <div id="wrapper">
+        <p>DROP US A LINE</p>
+            <div>
+                <img src="pics/phonebooth.jpeg" alt="Fixie bike in front of phonebooth" id="phonebooth">
+                <img src="pics/skyview.jpg" alt="Skyview of The Bike Shop" id="skyview">
+                    <ul id="contact-options">
+                        <li class="contact-buttons">
+                            <a href="tel:15025557382"><img src="pics/phone-icon.png">1(502)555-7382</a>
+                        </li>
+                        <li class="contact-buttons">
+                            <a class="modalbox" href="#inline"><img src="pics/email-icon.png">Send us an email</a>
+                        </li> 
+                        <li class="contact-buttons">
+                            <a href="http://g.co/maps/7jx2w"><img src="pics/map-icon.png">1377 Bardstown Road<br> Louisville, KY 40204</a>
+                        </li>    
+                    </ul>
+            </div>
+            <div id="map"></div>
+        </div>
+        <div class="push"></div>  
+    <div id="inline">
+
+        <img id="contact-logo" src="pics/bikestamp.png">
+
+        <h2>Send us a Message</h2>
+
+        <form id="contact" name="contact" action="#" method="post">
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="email" class="txt">
+            <br>
+            <label for="msg">Enter a Message</label>
+            <textarea id="msg" name="msg" class="txtarea"></textarea>
+
+            <button id="send">Send E-mail</button>
+        </form>
+    </div>
+      <footer id="legal">
+        Fixies Bikes 2016
+      </footer>
+<script src="js/maps.js"></script>      
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+         async defer></script>
+<script src="js/contact.js"></script>
+
+    </body>
+</html>

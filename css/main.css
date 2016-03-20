@@ -88,6 +88,10 @@ Banner image
 SERVICES.html:
 Main section
 */
+.main-content{
+    display: inline;
+}
+
 
 #home-section{
     display: inline-block;
@@ -96,9 +100,11 @@ Main section
     border-right-style: solid;
     height: 298px;
     width: 190px;
+    float: left;
 }
 
 #brian{
+    display: inline-block;
     width: 87px;
     height: 298px;
     margin: 0 0 0 10px;
@@ -161,24 +167,27 @@ Main section
     padding-top: 10px;
 }
 
-
-iframe{
-    margin: auto;
-    display: none;
+.instagram{
+    display: block;
+    float: none;
+    background-color: aqua
 }
+
 
 /*
 SERVICES:
 Hours
 */
 #hours{
+    display: inline-block;
     width:110px;
     margin-right: 46px;
     float: right;
-    margin-top: 30px;
+    margin-top: 10px;
+    
 }
 
-ul:before{
+#hours ul:before{
     content:attr(aria-label);
     font-size:120%;
     font-weight:bold;
@@ -262,6 +271,7 @@ html, body {
     text-align: center;
     color: white;
     background-color: black;
+    clear: both;
 }
 /*
 Desktop Responsive

@@ -1,5 +1,5 @@
 <!DocType HTML>
-<html.>
+<html>
   <head>
         <meta charset="utf=8">
         <link href='https://fonts.googleapis.com/css?family=Montserrat:700|Amatic+SC|Economica|Pompiere' rel='stylesheet' type='text/css'>
@@ -23,59 +23,64 @@
       </header>
       <div id="banner">
       </div>
-      <div id="wrapper">
-           <div id="home-section"> 
-               <img id="brian" src="pics/brian.jpg" alt="Brian Ritter">
-               <div class="brian-text">
-                    <h2 class="brian-name">Brian Ritter</h2>
+          <div id="wrapper">
+              <div class="main-content">
+               <div id="home-section"> 
+                   <img id="brian" src="pics/brian.jpg" alt="Brian Ritter">
+                   <div class="brian-text">
+                        <h2 class="brian-name">Brian Ritter</h2>
+                    </div>
+                    <div class="brian-text">
+                          <h3>Store Manager</h3>
+                   </div>
+                   <ul class="brian-social">
+                       <li>
+                            <a href="https://www.facebook.com/brian.ritter">
+                                <img title="Facebook" id="brian-facebook" alt="Facebook" src="pics/brian-facebook.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/brian.ritter">
+                                <img title="Instagram" id="brian-instagram" alt="Instagram" src="pics/brian-instagram.png">
+                            </a>
+                       </li>    
+                        <li>   
+                            <a href="https://www.twitter.com/brian.ritter">
+                                <img title="Twitter" id="brian-twitter" alt="Twitter" src="pics/brian-twitter.png">
+                            </a>
+                        </li>
+                   </ul> 
+              </div>
+               <div id="hours">
+                    <ul aria-label="Hours">
+                       <li class="hours_info">Tuesday-Saturday: <br> 12pm-8pm</li>
+                       <li class="hours_info">Sunday: <br> 12pm-6pm</li>
+                       <li class="hours_info">Closed Mondays and <br> all major holidays</li>
+                   </ul>
+                   <p id="mission_statement">
+                   We offer unique custom fixed gear bikes that will put a smile on your face and wind in your hair.
+                   </p>
                 </div>
-                <div class="brian-text">
-                      <h3>Store Manager</h3>
-               </div>
-               <ul class="brian-social">
-                   <li>
-                        <a href="https://www.facebook.com/brian.ritter">
-                            <img title="Facebook" id="brian-facebook" alt="Facebook" src="pics/brian-facebook.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/brian.ritter">
-                            <img title="Instagram" id="brian-instagram" alt="Instagram" src="pics/brian-instagram.png">
-                        </a>
-                   </li>    
-                    <li>   
-                        <a href="https://www.twitter.com/brian.ritter">
-                            <img title="Twitter" id="brian-twitter" alt="Twitter" src="pics/brian-twitter.png">
-                        </a>
-                    </li>
-               </ul> 
-            </div>
-            <div id="hours">
-                <ul aria-label="Hours">
-                   <li class="hours_info">Tuesday-Saturday: <br> 12pm-8pm</li>
-                   <li class="hours_info">Sunday: <br> 12pm-6pm</li>
-                   <li class="hours_info">Closed Mondays and <br> all major holidays</li>
-               </ul>
-               <p id="mission_statement">
-               We offer unique custom fixed gear bikes that will put a smile on your face and wind in your hair.
-               </p>
-            </div>
-      </div>
-      <div>
-        <ul id="photos">
-      </div>        
+                   <div class="instafeed">
+                     
+               </div> 
+              </div>      
+      </div>      
       <div class="push"></div>
-        <script type="text/javascript" src="path/to/app.js"></script>
+              <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+             <script type="text/javascript" src="js/instafeed.js"></script>
+            <script type="text/javascript">
+                var feed = new Instafeed({
+                    get: 'tagged',
+                    tagName: 'fixies',
+                    clientId: 'de61be5e94164177bdc6a2aca3c40c3e'
+                });
+                feed.run();
+            </script>
     </body>
     <footer id="legal">
         <div>
-        ©Fixies Bikes 2016
+        Fixies Bikes 2016
         </div>
     </footer>
-
-
-
-
-
-
-</html.>
+</html>
