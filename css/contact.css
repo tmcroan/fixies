@@ -8,7 +8,6 @@
     font-size: 2.2em;
     color: darkcyan;
     font-weight: 900;
-    padding: 15px;
     font-family: 'Montserrat','sans-serif'
 }
 
@@ -31,6 +30,7 @@
     float: left;
     width:37%;
     margin-left: 10%;
+    margin-top:-10px
 }
 
 .contact-pics{
@@ -77,7 +77,8 @@ label {
     margin-left: 15px; 
     margin-bottom: 9px; 
     font-family: Georgia, serif; 
-    color: #646464; font-size: 1em;
+    color: #646464; 
+    font-size: 1em;
 }
 
 .txt { 
@@ -104,7 +105,7 @@ width: 300px;
 height: 150px;
 border: 1px dotted #005f5f;
 padding: 5px 9px; 
-font-size: 1.2em;
+font-size: 1em;
 line-height: 1.4em;
 }
 
@@ -150,7 +151,7 @@ background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#005f
   z-index:10000;
   position: absolute;
   height: 430px;
-  width:400px;
+  width:380px;
   /* Default */
 
   /* Center the dialog */
@@ -165,7 +166,6 @@ background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#005f
     border-radius: 10px
 }
 .ng-modal-dialog h2{
-    font-size: em;
     line-height: 1.9em;
     margin-bottom: 30px;
     margin-left: 15px;
@@ -191,8 +191,12 @@ background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#005f
 
             }
 
-        .contact-options .contact-buttons{
+        #contact-options .contact-buttons{
             font-size: 1.5em;}
+        
+        #contact-options .contact-buttons .ng-modal{
+            font-size: .59em;}
+        
     
         .ng-modal-dialog h2{
             font-size: 2em;
